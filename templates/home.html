@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/home.css">
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+
+<div class="feed">
+    <h1>Feed</h1>
+    <form method="post">
+        <textarea type="text" placeholder="Status" style="width:500px; height:300px;" name="StatusBox"></textarea>
+        <input type="submit" value="Post">
+    </form>
+
+</div>
+
+<div class="toptext">
+    <h1>{{ActiveUser}}</h1>
+    {% for i in Status %}
+    <p1>
+        {{i}}
+        <br>
+    </p1>
+    {% endfor %}
+    <a href="/logout?username={{ActiveUser}}">logout</a>
+</div>
+
+
+
+<div class="Bigbox">
+    <br>
+</div>
+
+
+</body>
+</html>

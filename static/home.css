@@ -1,0 +1,30 @@
+body{
+background-color:#EDFFF6;
+}
+
+.Bigbox{
+float: left;
+height:1600px;
+width:1260px;
+background-color:#D9F3FF;
+}
+
+.toptext{
+float: right;
+background-color:#D9F3FF;
+width:1260px;
+}
+
+.lgout{
+float:left;
+background-color:#D9F3FF;
+width:1030px;
+height:80px;
+}
+
+.feed{
+float: right;
+background-color:#FFF7D9;
+width:1260px;
+height:1600px;
+}
