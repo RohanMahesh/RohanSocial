@@ -1,6 +1,6 @@
 import pymongo
 from flask import Flask, render_template, request, redirect
-app = Flask("People")
+app = Flask(__name__)
 myclient = pymongo.MongoClient("mongodb+srv://Rohan_Mahesh111:miniPEKKA5%@rohanmahesh.dhyd9.mongodb.net/people?ssl=true&ssl_cert_reqs=CERT_NONE&retryWrites=true&w=majority")
 myDataBase = myclient["people"]
 myCollection = myDataBase["UserRecords"]
@@ -95,6 +95,6 @@ def logout():
 
 
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
 
